@@ -1,8 +1,8 @@
-<div>
-  <h2>{{ contactItem.name }}</h2>
-  <h3>{{ contactItem.address }}</h3>
-  <h4>{{ contactItem.phone }}</h4>
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <strong>{{ contactItem.name }}</strong>
+  <div>{{ contactItem.address }}</div>
+  <div>{{ contactItem.phone }}</div>
   <h6 [ciDeveloper]="contactItem.developer">Developer</h6>
-  <div (click)="onRemove()" class="remove">remove</div>
-  <div (click)="onDetails()" class="details">details</div>
+  <div (click)="onRemove()" class="btn btn-danger remove">remove</div>
+  <div (click)="onDetails()" class="btn btn-info details">details</div>
 </div>

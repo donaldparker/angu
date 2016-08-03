@@ -1,9 +1,5 @@
 <div>
-  <h1>Hello Angular 2</h1>
-  <div>It has been a while</div>
-  <contact-item
-      *ngFor="#contactItem of contacts"
-      [contactItem]="contactItem"
-      (removed)="onContactItemDeleted($event)"
-      [ngClass]="{'friend': contactItem.friend === true, 'developer': contactItem.developer}"></contact-item>
+  <h1>Contact Manager</h1>
+  <h3>A simple Angular contact manager</h3>
+  <ui-view></ui-view>
 </div>

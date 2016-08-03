@@ -1,7 +1,6 @@
 .is-developer {
-    display: block;
     font-weight: bold;
 }
 .is-not-developer {
-    display: none;
+    font-weight: 100;
 }
