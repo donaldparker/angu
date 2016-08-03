@@ -1,0 +1,19 @@
+{
+  "name": "angu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donaldparker/angu.git"
+  },
+  "author": "Donald Parker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donaldparker/angu/issues"
+  },
+  "homepage": "https://github.com/donaldparker/angu#readme"
+}
