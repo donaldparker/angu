@@ -2,6 +2,7 @@
   <h2>{{ contactItem.name }}</h2>
   <h3>{{ contactItem.address }}</h3>
   <h4>{{ contactItem.phone }}</h4>
+  <h6 [ciDeveloper]="contactItem.developer">Developer</h6>
   <div (click)="onRemove()" class="remove">remove</div>
   <div (click)="onDetails()" class="details">details</div>
 </div>

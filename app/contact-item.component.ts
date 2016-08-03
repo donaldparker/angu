@@ -1,9 +1,11 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { DeveloperDirective } from './developer.directive';
 
 @Component({
     selector: 'contact-item',
+    directives: [ DeveloperDirective ],
     templateUrl: 'app/contact-item.component.html',
-    styleUrls: ['app/contact-item.component.css']
+    styleUrls: [ 'app/contact-item.component.css' ]
 })
 
 export default class ContactItemComponent {
