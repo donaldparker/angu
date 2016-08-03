@@ -1,5 +1,7 @@
 <div>
   <h1>Hello Angular 2</h1>
   <div>It has been a while</div>
-  <contact-item [contactItem]="firstContact" ></contact-item>
+  <section *ngFor="#contact of contacts">
+    <contact-item   [contactItem]="contact" (removed)="onContactItemDeleted($event)" ></contact-item>
+  </section>
 </div>
