@@ -1,8 +1,17 @@
 import { Component } from '@angular/core';
+import ContactItemComponent from './contact-item.component'
+
 
 @Component({
-    selector: 'my-app',
-    template: '<div><h1>Hello Angular 2</h1><div>It has been a while</div></div>'
+    selector: 'app',
+    directives: [ ContactItemComponent ],
+    templateUrl: 'app/app.component.html'
 })
 
-export class AppComponent { };
+export class AppComponent {
+    firstContact = {
+        name: 'Donald Parker',
+        address: '1234 Newport Ave.',
+        phone: '760.814.0037'
+    }
+};
