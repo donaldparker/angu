@@ -1,11 +1,11 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { DeveloperDirective } from './developer.directive';
+import { DeveloperDirective } from '../directives/developer.directive';
 
 @Component({
     selector: 'contact-item',
     directives: [ DeveloperDirective ],
-    templateUrl: 'app/contact-item.component.html',
-    styleUrls: [ 'app/contact-item.component.css' ]
+    templateUrl: 'app/contacts/contact-item.component.html',
+    styleUrls: [ 'app/contacts/contact-item.component.css' ]
 })
 
 export default class ContactItemComponent {
@@ -13,7 +13,6 @@ export default class ContactItemComponent {
     @Output('removed') remove = new EventEmitter();
 
     onRemove() {
-        console.log('on contact item remove');
         this.remove.emit(this.contactItem);
     }
     onDetails() {

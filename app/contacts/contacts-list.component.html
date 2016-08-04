@@ -1,10 +1,10 @@
 <div>
-  <section class="row">
+  <section class="row" >
     <contact-item
-        *ngFor="#contactItem of contacts"
+        *ngFor="let contactItem of contacts"
         [contactItem]="contactItem"
         (removed)="onContactItemDeleted($event)"
-        [ngClass]="{'contact': true, 'friend': contactItem.friend === true></contact-item>
+        [ngClass]="{'contact': true, 'friend': contactItem.friend === true}"></contact-item >
   </section>
   <section class="row">
     <div class="col-sm-12 col-md-6 col-md-offset-3">

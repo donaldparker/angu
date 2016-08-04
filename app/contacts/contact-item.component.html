@@ -3,6 +3,6 @@
   <div>{{ contactItem.address }}</div>
   <div>{{ contactItem.phone }}</div>
   <h6 [ciDeveloper]="contactItem.developer">Developer</h6>
-  <div (click)="onRemove()" class="btn btn-danger remove">remove</div>
-  <div (click)="onDetails()" class="btn btn-info details">details</div>
+  <a (click)="onRemove()" class="btn btn-danger remove">remove</a>
+  <a uiSref=".details" [uiParams]="{contactId: contactItem.id}" (click)="onDetails()" class="btn btn-info details">details</a>
 </div>
